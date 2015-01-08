@@ -1,0 +1,6 @@
+imgdir/
+node_modules/
+*.txt
+*.pyc
+*.log
+

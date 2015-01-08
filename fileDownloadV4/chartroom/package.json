@@ -1,0 +1,17 @@
+{
+  "name": "chartroom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "random-access-file": "^0.3.1",
+    "socket.io": "^1.2.1",
+    "socket.io-client": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
