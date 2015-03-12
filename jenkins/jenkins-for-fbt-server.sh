@@ -23,6 +23,7 @@ else
     source "$ENV"/bin/activate
 fi
 
+cd fbt_server_py/
 
 echo "== Code metrics ..."
 sloccount --duplicates --wide --details . > sloccount.sc || :
@@ -49,4 +50,4 @@ find . | grep -v "test" | grep ".py$" | xargs clonedigger --cpd-output || :
 
 
 echo "== Tests ..."
-python run_all_tests.py
+python run_all_tests.py || :
