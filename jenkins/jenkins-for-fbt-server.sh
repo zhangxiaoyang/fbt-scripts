@@ -23,14 +23,17 @@ else
     source "$ENV"/bin/activate
 fi
 
+
 cd fbt_server_py/
+
 
 echo "== Code metrics ..."
 sloccount --duplicates --wide --details . > sloccount.sc || :
 
 
 echo "== Coverage ..."
-find . | grep -v "test" | grep ".py$"| xargs coverage xml
+find . | grep ".py$"| xargs coverage run
+coverage xml --omit=/usr/local/lib/*,/usr/share/*
 
 
 echo "== Pylint ..."
