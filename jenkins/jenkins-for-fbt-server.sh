@@ -35,7 +35,6 @@ echo "== Coverage ..."
 find . | grep ".py$"| xargs coverage run
 coverage xml --omit=/usr/local/lib/*,/usr/share/*
 
-
 echo "== Pylint ..."
 rm -rf pylint.log
 for f in `find . | grep -v "test" | grep ".py$"`
@@ -54,3 +53,8 @@ find . | grep -v "test" | grep ".py$" | xargs clonedigger --cpd-output || :
 
 echo "== Tests ..."
 python run_all_tests.py || :
+
+echo "== Files no tests"
+egrep "[^\" ]+\.py" -o coverage.xml | sort |uniq > diff1.txt 
+find . -name "*.py" | grep -v "test" | egrep -o "[a-zA-Z0-9_\-]+.py" > diff2.txt
+diff diff1.txt diff2.txt | grep ">" | awk '{print $2}'
