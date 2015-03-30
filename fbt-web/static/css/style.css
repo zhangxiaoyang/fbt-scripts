@@ -32,7 +32,6 @@ a {
   margin: auto;
   width: 990px;
   height: 70px;
-  border-bottom: 1px solid #EEE;/*TEMP*/
 }
 
 .logo {
@@ -68,4 +67,15 @@ color: red;
 
 .nav .active {
   border-bottom: 3px solid #1abc9c;
+}
+
+/*
+** Container
+*/
+.wrapper {
+  background: #f2f2f2 url(../img/shadow.png) top repeat-x;
+}
+.container {
+  width: 990px;
+  margin: 0 auto;
 }
