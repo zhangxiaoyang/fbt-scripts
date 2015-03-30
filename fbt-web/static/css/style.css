@@ -1,0 +1,71 @@
+/********************************************************
+*   Friendsbt.com
+*
+*   Author  :   zhangxiaoyang.hit[at]gmail.com
+*   Date    :   2015-03-30 23:26
+*   Color   :   #1abc9c
+********************************************************/
+
+/*
+** Extern
+*/
+html, body, span, div, p, a, table, tbody, td, h1, h2, h3, h4, h5, h6, img, form, font, strong, b, i, dl, dt, dd, ol, ul, li, dl, dd, dt, iframe, label, blockquote, input, button {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a:hover, a:visited {
+  color: #1abc9c;
+}
+a {
+  color: #666;
+  text-decoration: none;
+  outline: none;
+  display: block;
+}
+
+/*
+** Header
+*/
+.header {
+  margin: auto;
+  width: 990px;
+  height: 70px;
+  border-bottom: 1px solid #EEE;/*TEMP*/
+}
+
+.logo {
+  float: left;
+  margin-top: 15px;
+}
+
+.nav {
+  float: right;
+  width: 650px;
+}
+
+.nav a:visited {
+color: red;
+}
+
+.nav .logo {
+  vertical-align: middle;
+  border: none;
+}
+
+.nav ul li {
+  float: left;
+  margin: 0 16px;
+  width: 60px;
+  height: 67px;
+  line-height: 80px;
+  text-align: center;
+  font: 20px/70px "Microsoft YaHei","黑体";
+  position: relative;
+  z-index: 20;
+}
+
+.nav .active {
+  border-bottom: 3px solid #1abc9c;
+}
