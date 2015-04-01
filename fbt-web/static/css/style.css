@@ -13,6 +13,7 @@ html, body, span, div, p, a, table, tbody, td, h1, h2, h3, h4, h5, h6, img, form
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
 }
 
 a:hover {
@@ -89,7 +90,7 @@ a {
 }
 
 .nav .active {
-  border-bottom: 4px solid #1abc9c;
+  border-bottom: 5px solid #1abc9c;
 }
 
 /*
@@ -121,11 +122,49 @@ a {
   right: 0;
 }
 
+.list {
+  padding: 10px 0;
+}
+
 .list-item {
   display: inline-block;
-  width: 120px; 
-  height: 200px;
-  margin: 0 20px;
+  width: 200px; 
+  height: 120px;
+  line-height: 25px;
+}
+
+.list-item p {
+  color: #777;
+}
+
+.splitter {
+  display: inline-block;
+  background: #eee;
+  width: 1px;
+  height: 120px;
+  vertical-align: top;
+  line-height: 100px;
+}
+
+.content {
+  margin: auto;
+  width: 990px;
+  text-align: left;
+  font: 14px/25px "Microsoft YaHei","黑体";
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.content .title {
+  clear: both;
+  font: 18px/60px "Microsoft YaHei","黑体";
+  text-align: left;
+  color: #1abc9c;
+  font-weight: bold;
+}
+
+.content .title:before {
+  content: "| ";
 }
 
 /*

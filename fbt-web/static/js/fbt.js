@@ -1,9 +1,11 @@
 $(function(){
-  $('.nav a')
-    .mouseenter(function() {
+  var $currentTag = $('#' + window.location.href.replace(/.+\//, '').replace('.html', ''));
+  $('.nav a') .mouseenter(function() {
+      $('.nav a').removeClass('active');
       $(this).addClass('active');
-    })
-    .mouseleave(function() {
-      $(this).removeClass('active');
-    });
+  });
+  $('.nav').mouseleave(function() {
+      $('.nav a').removeClass('active');
+      $currentTag.addClass('active');
+  });
 });
