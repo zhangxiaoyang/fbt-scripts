@@ -14,6 +14,7 @@ html, body, span, div, p, a, table, tbody, td, h1, h2, h3, h4, h5, h6, img, form
   margin: 0;
   list-style: none;
   position: relative;
+  font-family: "Microsoft YaHei","黑体";
 }
 
 a:hover {
@@ -118,8 +119,7 @@ a {
 }
 
 .gallery-image {
-  background: url(../img/index1.jpg) center no-repeat;
-  background: black;
+  background: url(../img/banner.jpg) center no-repeat;
   width: 100%;
   height: 400px;
   background-position: center;
@@ -130,8 +130,8 @@ a {
 }
 
 .list {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .list-item {
@@ -139,6 +139,7 @@ a {
   width: 200px; 
   height: 120px;
   line-height: 25px;
+  font: 14px/25px "Microsoft YaHei","黑体";
 }
 
 .list-item p {
@@ -195,7 +196,7 @@ a {
 */
 .footer {
   background: #111;
-  height: 120px;
+  height: 200px;
 }
 
 .footer ul li {
