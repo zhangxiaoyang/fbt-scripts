@@ -238,15 +238,16 @@ a {
 */
 .footer {
   background: #111;
-  height: 150px;
+  height: 100px;
   bottom: 0;
+  padding: 30px;
 }
 
 .footer ul li {
   color: #999;
   height: 20px;
   text-align: center;
-  font: 12px/60px "Microsoft YaHei","黑体";
+  font-size: 12px;
 }
 
 .footer a {
