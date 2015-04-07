@@ -110,6 +110,7 @@ a {
 .container {
   margin: 0 auto;
   text-align: center;
+  width: 990px;
 }
 
 .gallery {
@@ -136,7 +137,7 @@ a {
 
 .list-item {
   display: inline-block;
-  width: 200px; 
+  width: 180px; 
   height: 120px;
   line-height: 25px;
   font: 14px/25px "Microsoft YaHei","黑体";
@@ -162,11 +163,24 @@ a {
 
 .content {
   margin: auto;
-  width: 990px;
   text-align: left;
   font: 14px/25px "Microsoft YaHei","黑体";
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
+}
+
+.content-inline-wrapper {
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.content-inline {
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+  font: 14px/25px "Microsoft YaHei","黑体";
+  vertical-align: top;
 }
 
 .content .title {
@@ -177,7 +191,31 @@ a {
   font-weight: bold;
 }
 
+.content-inline .subtitle {
+  clear: both;
+  font: 14px/25px "Microsoft YaHei","黑体";
+  text-align: left;
+  color: #1abc9c;
+  font-weight: bold;
+}
+
+.content-inline-wrapper .title {
+  clear: both;
+  font: 18px/60px "Microsoft YaHei","黑体";
+  text-align: left;
+  color: #1abc9c;
+  font-weight: bold;
+}
+
 .content .title:before {
+  content: "| ";
+}
+
+.content-inline .subtitle:before {
+  content: "· ";
+}
+
+.content-inline-wrapper .title:before {
   content: "| ";
 }
 
@@ -191,12 +229,17 @@ a {
   padding: 5px;
 }
 
+.content table th {
+  background: #ddd;
+}
+
 /*
 ** Footer
 */
 .footer {
   background: #111;
-  height: 200px;
+  height: 150px;
+  bottom: 0;
 }
 
 .footer ul li {
