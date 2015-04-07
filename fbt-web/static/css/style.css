@@ -28,6 +28,15 @@ a {
   display: block;
 }
 
+a.showUnderline {
+  text-decoration: underline;
+  color: #1abc9c;
+}
+
+.textCenter {
+  text-align: center;
+}
+
 /*
 ** Header
 */
@@ -128,6 +137,14 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-image .share, .download {
+  display: inline-block;
+  margin: 40px;
+  margin-top: 270px;
 }
 
 .list {
