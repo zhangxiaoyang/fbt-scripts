@@ -1,0 +1,175 @@
+/* vim: set sw=2 ts=2 : */
+/********************************************************
+*   Friendsbt.com
+*
+*   Author  :   zhangxiaoyang.hit[at]gmail.com
+*   Date    :   2015-03-30 23:26
+*   Color   :   #1abc9c
+*   Font    :   small(12px) middle(18px) large(20px)
+********************************************************/
+
+/*
+ * Global
+ */
+html, body, span, div, p, a, table, tbody, td, h1, h2, h3, h4, h5, h6, img, form, font, strong, b, i, dl, dt, dd, ol, ul, li, dl, dd, dt, iframe, label, blockquote, input, button {padding:0; margin:0;list-style: none;}
+body {
+  /*line-height: 22px;
+  font-size: 12px;*/
+  font-family: arial, "\5B8B\4F53";
+  color: #666;
+  background: #fff;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/*
+ * Header
+ */
+.header {
+  display: block;
+  height: 60px;
+  background: #1abc9c;
+}
+
+.infobox {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 4px;
+}
+
+.logo .toast {
+  position: absolute;
+  padding: 2px 1px;
+  text-align: center;
+  border-radius: 6px;
+  opacity: 0.95;
+  z-index: 10;
+}
+
+.logo .toast-msg {
+  width: 20px;
+  top: 5px;
+  left: 50px;
+  color: white;
+  background: red;
+}
+
+.logo .toast-level {
+  width: 30px;
+  top: 37px;
+  left: 40px;
+  color: white;
+  background: black;
+}
+
+.detail {
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+}
+
+.detail div:nth-child(2), .detail div:nth-child(3) {
+  border-left: 1px solid white;
+}
+
+.detail-item {
+  display: inline-block;
+  line-height: 20px;
+  margin: 10px 5px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.detail-item span:first-child {
+  display: block;
+}
+
+.detail-item span:nth-child(2) {
+  font-size: 18px; 
+}
+
+.nav {
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  font-size: 20px;
+}
+
+.nav li {
+  float: left;
+  line-height: 60px;
+}
+
+.nav a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  width: 100px;
+  text-align: center;
+  color: white;
+}
+
+.nav a:hover {
+  font-weight: bold;
+  background: #08846b;
+}
+
+.nav-tools li {
+  margin: 0 10px;
+}
+
+.nav-tools button {
+  padding: 0 25px;
+  height: 34px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+}
+
+.nav-tools button:hover {
+  background: #08846b;
+}
+
+.nav-tools input {
+  padding: 5px;
+  height: 25px;
+  width: 150px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  opacity: 0.8;
+}
+
+.nav-tools input:focus {
+  background: white;
+  opacity: 1;
+}
+
+.nav-actions {
+  float: right;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.nav-actions li {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.nav-actions a {
+  width: 100%;
+  margin: 0 10px;
+}
