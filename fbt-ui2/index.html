@@ -1,6 +1,6 @@
 <!-- vim: set sw=2 ts=2 : -->
 <!DOCTYPE html>
-<html lang="en" ng-app="uiApp">
+<html lang="en" ng-app="fbtApp">
 <head>
   <meta charset="utf-8">
   <title>FBT2.0</title>
@@ -24,10 +24,10 @@
     </div>
     <div class="nav">
       <ul>
-        <li><a href="">首页</a></li>
-        <li><a href="">资源库</a></li>
-        <li><a href="">朋友圈</a></li>
-        <li><a href="">悬赏</a></li>
+        <li><a href="#/home">首页</a></li>
+        <li><a href="#/resource">资源库</a></li>
+        <li><a href="#/circle">朋友圈</a></li>
+        <li><a href="#/reward">悬赏</a></li>
       </ul>
     </div>
     <div class="nav nav-tools">
@@ -70,9 +70,11 @@
       </ul>
     </div>
   </div>
+  <div ng-view>
+  </div>
   <script src="static/js/angular-1.1.5.min.js"></script>
   <script src="static/js/app.js"></script>
-  <script src="static/js/containers.js" %}"></script>
-  <script src="static/js/services.js" %}"></script>
+  <script src="static/js/controllers.js"></script>
+  <script src="static/js/services.js"></script>
 </body>
 </html>
