@@ -1,0 +1,103 @@
+/* vim: set sw=2 ts=2 : */
+/********************************************************
+*   Friendsbt.com
+*
+*   Author  :   zhangxiaoyang.hit[at]gmail.com
+*   Date    :   2015-03-30 23:26
+*   Color   :   #1abc9c
+*   Font    :   small(12px) normal(14px) middle(18px) large(20px)
+*   Width   :   1020px
+********************************************************/
+
+.reward {
+  margin-top: 80px;
+}
+
+.reward > .row > div:first-child {
+  text-align: right;
+} 
+
+.reward .time {
+  color: grey;
+  display: inline-block;
+}
+
+.reward .logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid lightgrey;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.reward .name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.reward .message {
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.reward .item {
+  border: 1px solid lightgrey;
+  margin-left: 1px;
+  padding: 10px 0;
+  border-radius: 2px;
+  height: 100px;
+  text-align: center;
+}
+
+.reward .item > div {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reward .item .resource-name p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.reward .item .resource-name span {
+  font-weight: normal;
+  font-size: 12px;
+  padding-right: 5px;
+}
+
+.reward .item .fb {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.reward .item .addition .small-logo {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+
+.reward button {
+  background: white;
+  color: grey;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding: 5px 20px;
+  font-size: 18px;
+  margin: 2px;
+}
+
+.reward button.primary {
+  background: #1abc9c;
+  color: white;
+}
+
+.reward button:hover {
+  background: lightgrey;
+}
+
+.reward button.primary:hover {
+  background: #08846b;
+}
