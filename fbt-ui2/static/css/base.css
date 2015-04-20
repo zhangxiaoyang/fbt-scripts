@@ -133,7 +133,8 @@ body {
   border-radius: 3px;
 }
 
-.nav-tools {
+.nav-main a:hover {
+  border-radius: 0;
 }
 
 .nav-tools li {
