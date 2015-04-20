@@ -6,6 +6,7 @@
   <title>FBT2.0</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="static/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="static/css/bootstrap-modals.css">
   <link rel="stylesheet" href="static/css/base.css">
   <link rel="stylesheet" href="static/css/reward.css">
   <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css"/>
@@ -74,9 +75,28 @@
   </div>
   <div class="container" ng-view>
   </div>
+  <div class="shortcut-box">
+    <div class="top">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x"></i>
+      </span>
+    </div>
+    <div class="bottom">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-arrow-down fa-stack-1x"></i>
+      </span>
+    </div>
+    <div class="chat">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-comments fa-stack-1x"></i>
+      </span>
+    </div>
+  </div>
   <script src="static/js/angular-1.1.5.min.js"></script>
   <script src="static/js/app.js"></script>
-  <script src="static/js/controllers.js"></script>
+  <script src="static/js/controller-reward.js"></script>
   <script src="static/js/services.js"></script>
+  <script src="static/js/jquery-2.0.3.min.js"></script>
+  <script src="static/js/bootstrap-modals.js"></script>
 </body>
 </html>

@@ -26,6 +26,7 @@ body {
   background: #fff;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow: hidden;
 }
 
 /*********************************************************************
@@ -43,7 +44,8 @@ body {
 }
 
 .logo {
-  display: inline-block; }
+  display: inline-block; 
+}
 
 .logo img {
   width: 48px;
@@ -58,7 +60,7 @@ body {
   padding: 2px 1px;
   text-align: center;
   border-radius: 6px;
-  opacity: 0.95;
+  opacity: 0.85;
   z-index: 10;
 }
 
@@ -72,7 +74,7 @@ body {
 
 .logo .toast-level {
   width: 30px;
-  top: 37px;
+  top: 32px;
   left: 40px;
   color: white;
   background: black;
@@ -223,8 +225,8 @@ body {
 }
 
 .nav-categories a:not(.noHover):hover {
-  margin-top: -1px;
-  border-bottom: 3px solid #1abc9c;
+  margin-top: -2px;
+  border-bottom: 2px solid #1abc9c;
   border-radius: 0px;
 }
 
@@ -236,11 +238,36 @@ body {
   top: 90px;
   position: absolute;
   display: block;
-  background: lightgrey;
+  background: orange;
   width: 100%;
   height: 80px;
   left: 0;
-  z-index: -1;
+  font-size: 20px;
+  color: white;
+}
+
+.banner .row {
+  padding: 0 35px;
+  height: 100%;
+}
+
+.banner .row > div {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner button {
+  background: rgba(255, 255, 255, 0.5);
+  color: grey;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 8px 35px;
+  font-size: 20px;
+  margin: 2px;
+}
+
+.banner button:hover {
+  background: lightgrey;
 }
 
 /*********************************************************************
@@ -249,4 +276,93 @@ body {
 
 .container {
   margin: 20px 50px;
+}
+
+/*********************************************************************
+* Shortcut
+*********************************************************************/
+
+.shortcut-box {
+  position: absolute;
+  color: lightgrey;
+  right: 20px;
+  bottom: 20px;
+  z-index: 50;
+}
+
+.shortcut-box > div {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.shortcut-box > div:hover {
+  color: grey;
+}
+
+/*********************************************************************
+* Controls
+*********************************************************************/
+
+input[type="radio"] {
+  cursor: pointer;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal .close {
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  float: right;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+}
+
+.modal .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.modal .modal-header img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  margin: 4px;
+}
+
+.modal .modal-header * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+button.default {
+  background: white;
+  color: grey;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding: 5px 20px;
+  font-size: 18px;
+  margin: 2px;
+}
+
+button.primary {
+  background: #1abc9c;
+  color: white;
+}
+
+button.default:hover {
+  background: lightgrey;
+}
+
+button.primary:hover {
+  background: #08846b;
 }

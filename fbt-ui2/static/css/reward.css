@@ -48,7 +48,6 @@
   padding: 10px 0;
   border-radius: 2px;
   height: 100px;
-  text-align: center;
 }
 
 .reward .item > div {
@@ -79,25 +78,6 @@
   border: 1px solid lightgrey;
 }
 
-.reward button {
-  background: white;
-  color: grey;
-  border: 1px solid lightgrey;
-  border-radius: 4px;
-  padding: 5px 20px;
-  font-size: 18px;
-  margin: 2px;
-}
-
-.reward button.primary {
-  background: #1abc9c;
-  color: white;
-}
-
-.reward button:hover {
-  background: lightgrey;
-}
-
-.reward button.primary:hover {
-  background: #08846b;
+.reward .item .addition .fa {
+  cursor: pointer; 
 }
