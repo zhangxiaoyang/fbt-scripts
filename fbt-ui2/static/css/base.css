@@ -16,12 +16,12 @@ html, body, span, div, p, a, table, tbody, td, h1, h2, h3, h4, h5, h6, img, form
   padding:0;
   margin:0;
   list-style: none;
+  font-family: "Microsoft YaHei","黑体","文泉驛微米黑";
 }
 
 body {
   /*line-height: 22px;
   font-size: 12px;*/
-  font-family: arial, "\5B8B\4F53";
   color: #666;
   background: #fff;
   font-smoothing: antialiased;
@@ -262,7 +262,7 @@ body {
   color: grey;
   border: 1px solid white;
   border-radius: 4px;
-  padding: 8px 35px;
+  padding: 8px 22px;
   font-size: 20px;
   margin: 2px;
 }
@@ -276,7 +276,9 @@ body {
 *********************************************************************/
 
 .container {
-  margin: 20px 50px;
+  padding: 0;
+  margin: 0 auto;
+  /*margin: 20px 50px;*/
 }
 
 /*********************************************************************
@@ -310,6 +312,14 @@ input[type="radio"] {
 
 .modal {
   background: rgba(0, 0, 0, 0.8);
+}
+
+.modal .modal-header {
+  border-bottom: 2px solid #1abc9c;
+}
+
+.modal .modal-footer {
+  border: 0;
 }
 
 .modal .close {
