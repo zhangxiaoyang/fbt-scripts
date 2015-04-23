@@ -19,6 +19,8 @@
 
 .reward .time {
   color: grey;
+  font-style: italic;
+  font-size: 18px;
   display: inline-block;
 }
 

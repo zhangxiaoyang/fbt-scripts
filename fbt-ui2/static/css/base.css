@@ -196,7 +196,6 @@ body {
 .subheader {
   display: block;
   height: 30px;
-  border-bottom: 1px solid #1abc9c;
   text-align: center;
 }
 
@@ -212,7 +211,7 @@ body {
 }
 
 .nav-categories li {
-  line-height: 30px;
+  line-height: 27px;
 }
 
 .nav-categories li:nth-child(1), .nav-categories li:nth-child(4), .nav-categories li:nth-child(10) {
@@ -226,8 +225,7 @@ body {
 }
 
 .nav-categories a:not(.noHover):hover {
-  margin-top: -2px;
-  border-bottom: 2px solid #1abc9c;
+  border-bottom: 3px solid #1abc9c;
   border-radius: 0px;
 }
 
@@ -312,6 +310,10 @@ input[type="radio"] {
 
 .modal {
   background: rgba(0, 0, 0, 0.8);
+}
+
+.modal .modal-title * {
+  color: #1abc9c;
 }
 
 .modal .modal-header {
