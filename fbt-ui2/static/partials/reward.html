@@ -6,10 +6,10 @@
       悬赏啊悬赏，悬赏啊悬赏。
     </div>
     <div class="col-md-2">
-      <button>我的悬赏</button>
+      <button><a href="#/myreward">我的悬赏</a></button>
     </div>
     <div class="col-md-2">
-      <button>发布悬赏</button>
+      <button ng-click="publishClickHandler()">发布悬赏</button>
     </div>
   </div>
 </div>
@@ -36,9 +36,9 @@
         <div class="col-md-2 fb">1000F</div>
         <div class="col-md-6 addition">
           追加悬赏:
-          <span><img class="small-logo" src="static/img/avatar.jpg"/> ABC 200F</span><span></span>
-          <span><img class="small-logo" src="static/img/avatar.jpg"/> ABC 200F</span><span></span>
-          <span><img class="small-logo" src="static/img/avatar.jpg"/> ABC 200F</span><span></span>
+          <span><img class="small-logo" src="static/img/avatar.jpg"/> ABC 200F</span>
+          <span><img class="small-logo" src="static/img/avatar.jpg"/> ABC 200F</span>
+          <span><img class="small-logo" src="static/img/avatar.jpg"/> ABC 200F</span>
           <span ng-click="viewClickHandler()" class="more-addition"><i class="fa fa-angle-down"></i></span>
         </div>
         <div class="col-md-2">
@@ -49,6 +49,27 @@
             <button ng-click="appendClickHandler()" class="default">追加悬赏</button>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--==============================================================
+Publish Modal
+===============================================================-->
+<div class="modal fade" id="publish-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-title" id="myModalLabel"><h2>发布悬赏</h2></div>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button class="default" data-dismiss="modal">取消</button>
+        <button class="default primary">确定</button>
       </div>
     </div>
   </div>
@@ -107,7 +128,30 @@ View Modal
         <div class="modal-title" id="myModalLabel"><h2>悬赏列表</h2></div>
       </div>
       <div class="modal-body">
-        ...
+        <div class="row addition">
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+        </div>
+        <div class="row addition">
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+        </div>
+        <div class="row addition">
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+        </div>
+        <div class="row addition">
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+          <div class="col-md-3"><img class="logo" src="static/img/avatar.jpg"/><br/>ABC 200F</div>
+        </div>
       </div>
       <div class="modal-footer">
         <button class="default" data-dismiss="modal">关闭</button>

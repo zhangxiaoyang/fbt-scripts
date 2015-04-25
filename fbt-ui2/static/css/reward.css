@@ -20,7 +20,6 @@
 .reward .time {
   color: grey;
   font-style: italic;
-  font-size: 18px;
   display: inline-block;
 }
 
@@ -82,4 +81,16 @@
 
 .reward .item .addition .fa {
   cursor: pointer; 
+}
+
+.modal .addition {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal .addition .logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid lightgrey;
 }

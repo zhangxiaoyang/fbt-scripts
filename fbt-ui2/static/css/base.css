@@ -18,6 +18,26 @@ html, body, span, div, p, a, table, tbody, td, h1, h2, h3, h4, h5, h6, img, form
   list-style: none;
   font-family: "Microsoft YaHei","黑体","文泉驛微米黑";
 }
+ ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: lightgrey;
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: grey;
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: #grey;
+  -webkit-border-radius: 6px;
+}
 
 body {
   /*line-height: 22px;
@@ -197,6 +217,7 @@ body {
   display: block;
   height: 30px;
   text-align: center;
+  background: rgba(224, 224, 224, 0.5);
 }
 
 .nav-categories a {
@@ -312,16 +333,31 @@ input[type="radio"] {
   background: rgba(0, 0, 0, 0.8);
 }
 
+
+.modal .modal-body {
+  max-height: 380px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .modal .modal-title * {
   color: #1abc9c;
 }
 
 .modal .modal-header {
-  border-bottom: 2px solid #1abc9c;
+  border-bottom: 3px solid #1abc9c;
 }
 
 .modal .modal-footer {
-  border: 0;
+  border-top: 1px solid lightgrey;
+}
+
+.modal.fade {
+  opacity: 1;
+}
+
+.modal.fade .modal-dialog, .modal.in .modal-dialog {
+  transform: translate(0, 0);
 }
 
 .modal .close {
@@ -355,6 +391,18 @@ input[type="radio"] {
 .modal .modal-header * {
   display: inline-block;
   vertical-align: middle;
+}
+
+button a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+button a:hover {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 button.default {
