@@ -217,7 +217,7 @@ body {
   display: block;
   height: 30px;
   text-align: center;
-  background: rgba(224, 224, 224, 0.5);
+  background: rgba(240, 240, 240, 0.5);
 }
 
 .nav-categories a {
@@ -266,17 +266,17 @@ body {
   color: white;
 }
 
-.banner .row {
+.banner .row-fluid {
   padding: 0 35px;
   height: 100%;
 }
 
-.banner .row > div {
+.banner .row-fluid > div {
   top: 50%;
   transform: translateY(-50%);
 }
 
-.banner button {
+.banner .btn {
   background: rgba(255, 255, 255, 0.5);
   color: grey;
   border: 1px solid white;
@@ -284,10 +284,13 @@ body {
   padding: 8px 22px;
   font-size: 20px;
   margin: 2px;
+  cursor: pointer;
 }
 
-.banner button:hover {
+.banner .btn:hover {
   background: lightgrey;
+  outline: none;
+  text-decoration: none;
 }
 
 /*********************************************************************
@@ -325,6 +328,9 @@ body {
 * Controls
 *********************************************************************/
 
+/*
+ * http://www.haorooms.com/post/css_mh_ck_radio
+ */
 input[type="radio"] {
   cursor: pointer;
 }
@@ -393,19 +399,19 @@ input[type="radio"] {
   vertical-align: middle;
 }
 
-button a {
+.btn a {
   outline: none;
   text-decoration: none;
   color: inherit;
 }
 
-button a:hover {
+.btn a:hover {
   outline: none;
   text-decoration: none;
   color: inherit;
 }
 
-button.default {
+.btn.default {
   background: white;
   color: grey;
   border: 1px solid lightgrey;
@@ -415,15 +421,46 @@ button.default {
   margin: 2px;
 }
 
-button.primary {
+.btn.primary {
   background: #1abc9c;
   color: white;
 }
 
-button.default:hover {
+.btn.default:hover {
   background: lightgrey;
 }
 
-button.primary:hover {
+.btn.primary:hover {
   background: #08846b;
+}
+
+.radio {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.radio label {
+  cursor: pointer;
+}
+
+.radio span {
+  width: 24px;
+  height: 18px;
+  float: left;
+  padding-top: 3px;
+  cursor: pointer;
+  text-align: center;
+  background-image: url(../img/radio.png);
+  background-repeat: no-repeat;
+  background-position: -24px 0;
+}
+
+.radio span input[type=radio] {
+  opacity: 0;
+  cursor: pointer;
+  filter: alpha(opacity=0);
+}
+
+.radio.checked span {
+  background-position: 0 0;
 }

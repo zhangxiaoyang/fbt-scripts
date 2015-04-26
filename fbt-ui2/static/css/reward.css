@@ -13,9 +13,13 @@
   margin-top: 100px;
 }
 
-.reward > .row > div:first-child {
+.reward > .row-fluid > div:first-child {
   text-align: right;
 } 
+
+.reward > .row-fluid:nth-child(2) {
+  clear: both;
+}
 
 .reward .time {
   color: grey;
