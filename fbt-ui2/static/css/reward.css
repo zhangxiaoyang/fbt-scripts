@@ -87,19 +87,19 @@
   cursor: pointer; 
 }
 
-.modal .addition {
+.reward .modal .addition {
   text-align: center;
   padding-bottom: 90px;
 }
 
-.modal .addition .logo {
+.reward .modal .addition .logo {
   width: 58px;
   height: 58px;
   border-radius: 50%;
   border: 2px solid lightgrey;
 }
 
-.upload-area {
+.reward .upload-area {
   background: #eee;
   border: 2px solid lightgrey;
   border-radius: 6px;
@@ -108,13 +108,13 @@
   margin-bottom: 10px;
 }
 
-.upload-area p {
+.reward .upload-area p {
   margin-bottom: 2px;
 }
 
-.upload-area .splitter {
+.reward .upload-area .splitter {
   display: inline-block;
   color: grey;
-  font-size: 40px;
+  font-size: 60px;
   vertical-align: middle;
 }

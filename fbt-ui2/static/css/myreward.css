@@ -87,12 +87,12 @@
   cursor: pointer; 
 }
 
-.modal .addition {
+.myreward .modal .addition {
   text-align: center;
   padding-bottom: 90px;
 }
 
-.modal .addition .logo {
+.myreward .modal .addition .logo {
   width: 58px;
   height: 58px;
   border-radius: 50%;
