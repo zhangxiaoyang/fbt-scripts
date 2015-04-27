@@ -103,7 +103,7 @@
   background: #eee;
   border: 2px solid lightgrey;
   border-radius: 6px;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   text-align: center;
   margin-bottom: 10px;
 }
