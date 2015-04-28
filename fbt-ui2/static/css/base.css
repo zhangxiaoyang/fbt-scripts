@@ -155,7 +155,7 @@ body {
   text-decoration: none;
   outline: none;
   display: block;
-  width: 85px;
+  width: 80px;
   text-align: center;
   color: white;
 }
@@ -249,10 +249,12 @@ body {
   line-height: 27px;
 }
 
-.nav-categories li:nth-child(1), .nav-categories li:nth-child(4), .nav-categories li:nth-child(10) {
+/*
+.nav-categories li:nth-child(1), .nav-categories li:nth-child(3), .nav-categories li:nth-child(11) {
   font-weight: bold;
   color: black;
 }
+*/
 
 .nav-categories .noHover:hover {
   color: black;
