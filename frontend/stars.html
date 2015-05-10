@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Stars Demo</title>
+    <style type="text/css">
+      #stars div {
+        display: inline-block;
+        color: Gold;
+        font-size: 50px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="stars"></div>
+    <div id="stars-num">0</div>
+
+
+    <script>
+      function initStars(id, starNum, chooseStarCallback) {
+        // Initialize the star html
+        var innerStars = '';
+        g_starSelectedNum = 0;//###Global variable###
+        var normalStar = '☆';
+        var selectedStar = '★';
+
+        for(var i = 0; i < starNum; i++) {
+          var oneStar = '<div id="star' + i + '">' + normalStar + '</div>';
+          innerStars += oneStar;
+        }
+        document.getElementById(id).innerHTML = innerStars;
+
+        // Bind click event to stars
+        for(var i = 0; i < starNum; i++) {
+          var starId = 'star' + i;
+
+          (function(i) {//###Closure###
+            document.getElementById(starId).addEventListener('click', function() {//###Event###
+              for(var j = i; j >=0; j--) {
+                var starId = 'star' + j;
+                document.getElementById(starId).innerHTML = selectedStar;
+              }
+              for(var j = i+1; j < starNum; j++) {
+                var starId = 'star' + j;
+                document.getElementById(starId).innerHTML = normalStar;
+              }
+
+              g_starSelectedNum = parseInt(this.id.replace(/[^0-9]/g, '')) + 1;//###Regex###
+
+              typeof chooseStarCallback === 'function'//###Callback###
+                && chooseStarCallback(g_starSelectedNum);
+            });
+
+            document.getElementById(starId).addEventListener('mouseenter', function() {
+              for(var j = i; j >=0; j--) {
+                var starId = 'star' + j;
+                document.getElementById(starId).innerHTML = selectedStar;
+              }
+              for(var j = i+1; j < starNum; j++) {
+                var starId = 'star' + j;
+                document.getElementById(starId).innerHTML = normalStar;
+              }
+            });
+
+            document.getElementById(starId).addEventListener('mouseleave', function() {
+              for(var j = g_starSelectedNum-1; j >=0; j--) {
+                var starId = 'star' + j;
+                document.getElementById(starId).innerHTML = selectedStar;
+              }
+              for(var j = g_starSelectedNum; j < starNum; j++) {
+                var starId = 'star' + j;
+                document.getElementById(starId).innerHTML = normalStar;
+              }
+            });
+          }(i));
+        }
+      }
+
+      function chooseStarCallback(num) {
+        document.getElementById('stars-num').innerHTML = num;
+      }
+      //Main entrance
+      initStars('stars', 11, chooseStarCallback);
+    </script>
+  </body>
+</html>
+<!-- vim: set sw=2 ts=2 expandtab : -->
