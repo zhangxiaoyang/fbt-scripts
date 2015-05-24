@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>jquery demo</title>
+        <style>
+            .button {
+                display: inline-block;
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .button:hover {
+                background: lightgrey;
+            }
+
+            .zero {
+                float: left;
+            }
+
+            .text {
+                border: 1px solid black;
+                height: 100px;
+            }
+            .raw {
+                border: 1px solid red;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="button">1</div>
+        <div class="button">2</div>
+        <div class="button">3</div>
+        <div class="button">4</div>
+        <div class="button">5</div>
+        <div class="button">6</div>
+        <div class="button">7</div>
+        <div class="button">8</div>
+        <div class="button">9</div>
+        <div class="button zero">0</div>
+        <hr>
+        <div class="button">+</div>
+        <div class="button">-</div>
+        <div class="button">=</div>
+        <div class="button">STAR</div>
+        <div class="button">RAW</div>
+        <hr>
+        <div class="text"></div>
+        <div class="raw"></div>
+    </body>
+
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script>
+        /*
+        var number = 1;
+        var string = 'abc';
+        var numbers = [1,2,3];
+        var dictionary = {'a':'1', 'b':2}:
+        */
+        /*
+        function clickCallback2() {
+            alert($(this).text());
+        }
+        */
+
+        var clickCallback = function() {
+            //alert($(this).text());
+            var strNumber = $(this).text();
+            var STAR = '☆';
+
+            if(strNumber == 'STAR') {
+                $('.text').append(STAR);
+            }
+            else if(strNumber == '-') {
+                $('.text').append('<div class="sub">' + strNumber + '</div>');
+            }
+            else if(strNumber == '+') {
+                $('.text').append('<div class="add">' + strNumber + '</div>');
+            }
+            else if(strNumber == '=') {
+                $('.text').append('<div class="equal">' + strNumber + '</div>');
+            }
+            else if(strNumber == 'RAW') {
+                console.log($('.text').html());
+            }
+            else {
+                $('.text').append(strNumber);
+            }
+
+            $('.sub, .add, .equal')
+                .css('color', 'red')
+                .css('display', 'inline-block')
+                .css('font-size', '20px');
+            //console.log(number);
+        };
+
+
+        $('.button').click(clickCallback);
+        //comment
+        /*
+        $('.button').mouseenter(function() {
+            alert($(this).text() + ' by mouse');
+        });
+        */
+    </script>
+</html>
